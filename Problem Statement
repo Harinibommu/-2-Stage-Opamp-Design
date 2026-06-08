@@ -1,0 +1,36 @@
+Design a 2-stage OTA in TSMC180nm technology.
+
+
+TSMC 0.18μm technology parameters (taken from model file):
+
+VTn = 0.37V; VTp = 0.39V; μnCox = 230 μA/V2; μpCox = 100 μA/V2; Vdd = 1.8V; Lmin = 0.18μm; Wmin = 0.27μm;
+
+
+The designed opamp, should be used to make a non-inverting amplifier of gain 2 The DC gain of the opamp should be at least 40dB.
+
+
+· The first part of your report should be your hand-design, and you should tabulate all calculated values as required in section
+
+· Tabulate the following from your simulated design:
+
+(a) W, L and operating points (gm, ro, VGS -VT, ID) of all transistors. Use transistor names as follows: M0 = input stage current source; M1-2 =input differential pair; M3-4 = current mirror active load; M5 = second stage amplifier; M6 =second stage current source.
+
+(b)Values of other components in the opamp.
+
+(c) DC gain of the opamp
+
+(d) Power consumption
+
+· Plot the transient response of the closed-loop amplifier with a 0.2V input step (use 0.1ns rise/fall times).
+
+
+· Do not use an ideal current source in the tail. You can use one ideal reference current source of 1/10th the tail current of the input differential pair for bias generation
+
+
+· You can assume a gate overdrive of 200mV in your initial calculations.
+
+
+· Run a DC operating point simulation to get the small signal parameters from simulation. Adjust the bias currents/MOSFET sizes to get closer to the required parameters.
+
+
+· You can also use the small signal parameters obtained from simulation to fine-tune the hand-calculated values, and get better estimates of other component values.
